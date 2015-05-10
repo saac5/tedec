@@ -1,0 +1,332 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+   <!--- Basic Page Needs
+   ================================================== -->
+  <meta charset="utf-8">
+  <title>TEDEC SRL</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+   <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="favicon.ico" >
+  <style type="text/css">
+    
+    .nuevo {
+        display:none;
+        position:absolute;
+        min-width:140px;
+        background-color:black;
+        background: url(images/k-opacity-70.png);
+      }
+      
+      .dos:hover > ul {
+        display:block;
+      }
+	  .nuevo li a:hover{
+		
+		color:red !important;
+		
+	  }
+  
+    .oscurecer{
+
+      opacity: 0.9;
+    }
+
+ 	    
+  </style>
+
+
+
+
+</script>
+
+<!-- DESDE ACA DE LA GALERIA!!! -->
+
+
+
+<link href="efectos/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="efectos/css/style.css" rel='stylesheet' type='text/css' />
+<!-- start plugins -->
+<script src="efectos/js/jquery.min.js"></script>
+<script type="text/javascript" src="efectos/js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		<script type="text/javascript" src="efectos/js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="efectos/js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -30
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+<!-- start light_box -->
+<link rel="stylesheet" type="text/css" href="efectos/css/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="efectos/js/jquery.fancybox-1.2.1.js"></script>
+	
+</head>
+<body style="background: url(images/patterns/grey.png)">
+
+    <!-- Header
+   ================================================== -->
+   <header class="mobile" >
+
+      <div class="row">
+
+         <div class="col full">
+
+            <div class="logo">
+               <a href="#"><img alt="" src="images/logo.jpg"></a>
+            </div>
+
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+              <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+                 <li><a href="index.html">INICIO</a></li>
+                 <li><a href="empresa.html">LA EMPRESA</a></li>
+                 <li class="dos" ><a href="#portfolio">OBRAS</a>
+              <ul class="nuevo" >
+                <li><a href="portfolio1.html">EN EJECUCION</a></li>
+                <li><a href="portfolio2.html">CULMINADAS</a></li>
+        
+          
+              </ul>
+                 
+           </li>
+              <li><a href="obra3.html">PROYECTOS FB</a></li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+               </ul>
+
+            </nav>
+
+         </div>
+
+      </div>
+
+   </header>
+
+      <!-- Header End -->
+
+
+
+<div class="container">
+
+<div class="textoSlider2" style="height: 50px;margin-top:15px;width:380px;text-align:center;">
+            <p id="titulo">OBRAS EN EJECUCION</p>
+
+              <p id="descripcion"></p>      
+          </div>
+     <div class="portfolio_main">
+
+
+						
+						<div id="portfoliolist">
+							<div class="portfolio logo1" data-cat="logo">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria1.html"><img src="images/obras1/portfolio/1.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">AUSTEN PLAZA</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria2.html"><img src="images/obras1/portfolio/2.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">COMPLEJO BALKONIA</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio web" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria3.html"><img src="images/obras1/portfolio/3.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">CRUZ DEL CHACO</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria4.html"><img src="images/obras1/portfolio/4.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">EDIFICIO D-TOWNER</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria5.html"><img src="images/obras1/portfolio/5.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">SALTO GRANDE l</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria6.html"><img src="images/obras1/portfolio/6.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">SALTO GRANDE ll</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria7.html"><img src="images/obras1/portfolio/7.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">VIVIENDA UNIFAMILIAR DS</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio logo1" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="galeria8.html"><img src="images/obras1/portfolio/8.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">VIVIENDA UNIFAMILIARES LC</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+					
+							<div class="clearfix"></div>
+						</div>
+		</div>
+</div>	
+
+ 
+  <!-- footer
+   ================================================== -->
+   <footer style="  background: #151719;margin-top:550px;padding:20px 0px 20px 0px;" >
+
+      <div class="row">
+
+         <div class="col g-7">
+            <ul class="copyright">
+      
+      
+            <li>Avda. Perú N°258 c/ Eligio Ayala </li>
+	      <li>tede@tigo.com.py</li>
+	      <li>Asunción - Paraguay </li>
+    
+             
+           </ul>
+         </div>
+
+         <div class="col g-5 pull-right">
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/pages/TEDEC/304080993135967?sk=info&tab=page_info">Seguinos en   <a href="#"><img heigth="15" width="15" alt="" src="images/fb.png"></a></i></a></li>
+         <li>  <a  href="http://www.exilonsoluciones.com"> Desarrollado por Exilon </a></li>  
+        </ul>
+         </div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+
+</body>
+</html>		

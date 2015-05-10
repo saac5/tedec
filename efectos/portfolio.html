@@ -1,0 +1,298 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+   <!--- Basic Page Needs
+   ================================================== -->
+  <meta charset="utf-8">
+  <title>TEDEC SRL</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <script type="text/javascript" src="js/funciones.js" ></script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+   <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="favicon.ico" >
+  <style type="text/css">
+    
+    .nuevo {
+        display:none;
+        position:absolute;
+        min-width:140px;
+        background-color:black;
+        background: url(images/k-opacity-70.png);
+      }
+      
+      .dos:hover > ul {
+        display:block;
+      }
+	  .nuevo li a:hover{
+		
+		color:red !important;
+		
+	  }
+  
+    .oscurecer{
+
+      opacity: 0.9;
+    }
+
+ 	    
+  </style>
+
+
+
+
+</script>
+
+<!-- DESDE ACA DE LA GALERIA!!! -->
+
+
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="efectos/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="efectos/css/style.css" rel='stylesheet' type='text/css' />
+<!-- start plugins -->
+<script src="efectos/js/jquery.min.js"></script>
+<script type="text/javascript" src="efectos/js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		<script type="text/javascript" src="efectos/js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="efectos/js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -30
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+<!-- start light_box -->
+<link rel="stylesheet" type="text/css" href="efectos/css/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="efectos/js/jquery.fancybox-1.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("div.fancyDemo a").fancybox();
+		});
+	</script>
+</head>
+<body>
+
+  <!-- Header
+   ================================================== -->
+   <header class="mobile">
+
+      <div class="row">
+
+         <div class="col full">
+
+            <div class="logo">
+               <a href="#"><img alt="" src="images/logo.jpg"></a>
+            </div>
+
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+              <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+                 <li><a href="index.html">INICIO</a></li>
+                 <li><a href="empresa.html">LA EMPRESA</a></li>
+                 <li class="dos" ><a href="#portfolio">OBRAS</a>
+              <ul class="nuevo" >
+                <li><a href="obra1.html">En Ejecución</a></li>
+                <li><a href="obra2.html">Obras Culminadas</a></li>
+        
+          
+              </ul>
+                 
+           </li>
+              <li><a href="obra3.html">PROYECTOS FB</a></li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+               </ul>
+
+            </nav>
+
+         </div>
+
+      </div>
+
+   </header>
+
+    <!-- Header End -->
+
+
+
+<div class="container">
+     <div class="portfolio_main">
+						
+						<div id="portfoliolist">
+							<div class="portfolio logo1" data-cat="logo">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p1.jpg"><img src="efectos/images/p1.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Logo</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p2.jpg"><img src="efectos/images/p2.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">APP</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio web" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p3.jpg"><img src="efectos/images/p3.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Web design</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p4.jpg"><img src="efectos/images/p4.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Business card</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p5.jpg"><img src="efectos/images/p5.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">APP</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p6.jpg"><img src="efectos/images/p6.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Business card</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p7.jpg"><img src="efectos/images/p7.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Business card</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio logo1" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="efectos/images/p8.jpg"><img src="efectos/images/p8.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Logo</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+					
+							<div class="clearfix"></div>
+						</div>
+		</div>
+</div>	
+
+</body>
+</html>		
